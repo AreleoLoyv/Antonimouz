@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Antonimouz</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+        <div id="ini" class="bienvenida">
+        <h1>Hola</h1>
+        <br>
+        <p>esto es un regalo para el Antonimouz</p>
+        <p>disculpe el Lag, por el tiempo de entrega</p>
+        <br>
+        <h3 id="solounavez" onclick="iniciarTodo()">Iniciar</h3>
+    </div>
+    
+    
+    <canvas id="screen" class="screen" width="500" height="500">
+    </canvas>
+    <img class="gb" src="./media/gb.png" alt="">
+    <div class="controles" id="ctrls">
+        <p><img class="u" src="./media/flecha.png" onclick="flechotas('UP')"></p>
+        <p><img class="l" src="./media/flecha.png" onclick="flechotas('LEFT')"><img class="d" src="./media/flecha.png" onclick="flechotas('DOWN')"><img class="r" src="./media/flecha.png" onclick="flechotas('RIGHT')"></p>
+    </div>
+    <script src="./js/game.js"></script>
+</body>
+</html>
