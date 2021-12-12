@@ -64,11 +64,61 @@ var nuevox,nuevoy;
 
 let antX ,antY;
 
+let match = 0;
+
 function draw(){
+   
+    
+    if(match == 9){
+        match = 0;
+        sub_draw();
+    }else{
+        match++;
+    }
+    
+    
+    ctx.fillStyle = "#415708";
+    ctx.beginPath();
+        switch(d){
+                case "LEFT":
+                ctx.moveTo(10+(box*9.5),20+(box*18.65));
+                ctx.lineTo(30+(box*9.5),10+(box*18.65));
+                ctx.lineTo(30+(box*9.5),30+(box*18.65));
+            break;
+            case "RIGHT":
+                ctx.moveTo(10+(box*9.5),10+(box*18.65));
+                ctx.lineTo(30+(box*9.5),20+(box*18.65));
+                ctx.lineTo(10+(box*9.5),30+(box*18.65));
+            break;
+            case "UP":
+                ctx.moveTo(20+(box*9.5),10+(box*18.65));
+                ctx.lineTo(10+(box*9.5),30+(box*18.65));
+                ctx.lineTo(30+(box*9.5),30+(box*18.65));
+            break;
+            case "DOWN":
+                ctx.moveTo(10+(box*9.5),10+(box*18.65));
+                ctx.lineTo(30+(box*9.5),10+(box*18.65));
+                ctx.lineTo(20+(box*9.5),30+(box*18.65));
+            break;
+            default:
+                ctx.arc(5+(box*10.1),20+(box*18.65),10, 0, 2*Math.PI);
+            break;
+    }
+
+/*
+    
+    */
+
+    ctx.fill();
+
+}
+
+function sub_draw(){
+    
     //fondo #9ac601
+    ctx.beginPath();
     ctx.fillStyle = "#9ac601";
     ctx.fillRect(0,0,500,500);
-   // ctx.drawImage(image,10,10,20,20);
     for(let i=0 ;i< ant.length;i++){
         ctx.fillStyle = ( i === 0 ) ? "#415708":"#9ac601";
         ctx.strokeStyle = "#415708";
@@ -81,11 +131,9 @@ function draw(){
 
     /*let*/ antX = ant[0].x;
     /*let*/ antY = ant[0].y;
-
     
-
-    ctx.fillStyle = "white";
     // DIRECCIONES 
+    
     if(d == "LEFT") antX -= box;
     if(d == "UP") antY -= box;
     if(d == "RIGHT") antX += box;
@@ -159,6 +207,7 @@ function draw(){
     ctx.font = "20px egb";
     ctx.fillText("NIVEL "+level,13*box,19.7*box);
 
+    ctx.fill();
     /*
 
     flechita
@@ -175,36 +224,7 @@ function draw(){
     
 
     */
-    ctx.fillStyle = "#415708";
-    ctx.beginPath();
-    switch(d){
-            case "LEFT":
-                ctx.moveTo(10+(box*9.5),20+(box*18.65));
-                ctx.lineTo(30+(box*9.5),10+(box*18.65));
-                ctx.lineTo(30+(box*9.5),30+(box*18.65));
-            break;
-            case "RIGHT":
-                ctx.moveTo(10+(box*9.5),10+(box*18.65));
-                ctx.lineTo(30+(box*9.5),20+(box*18.65));
-                ctx.lineTo(10+(box*9.5),30+(box*18.65));
-            break;
-            case "UP":
-                ctx.moveTo(20+(box*9.5),10+(box*18.65));
-                ctx.lineTo(10+(box*9.5),30+(box*18.65));
-                ctx.lineTo(30+(box*9.5),30+(box*18.65));
-            break;
-            case "DOWN":
-                ctx.moveTo(10+(box*9.5),10+(box*18.65));
-                ctx.lineTo(30+(box*9.5),10+(box*18.65));
-                ctx.lineTo(20+(box*9.5),30+(box*18.65));
-            break;
-            default:
-                ctx.arc(5+(box*9.5),20+(box*18.65),10, 0, 2*Math.PI);
-            break;
-    }
-
-    ctx.closePath();
-    ctx.fill();
+    
 
 }
 
@@ -496,7 +516,7 @@ function despuesDeLaPantallaDeJuego(){
     ingame.loop = true;
     ingame.volume = 0.5;
     ingame.play();
-    game = setInterval(draw,250);
+    game = setInterval(draw,25);
 
 }
 
