@@ -1,3 +1,4 @@
+
 <h1>
 Antonimouz in SN<span>~~ake~~</span>IVY
 </h1>
@@ -9,7 +10,8 @@ Proyecto de Videojuego al estilo Snake con tematica especial de Cumpleaños de A
 
 Tan simple como usar las direccionales para controlarlo
 
-<table><tr style="border:0;background:#fff"><td style="border:0"></td><td style="border:0"><kbd>🢁</kbd></td><td style="border:0"></td></tr><tr style="border:0; background:#fff"><td style="border:0"><kbd>🢀</kbd></td><td style="border:0"><kbd>🢃</kbd></td><td style="border:0"><kbd>🢂</kbd></td></tr></table>
+<p style="text-align:center; margin:0px"><kbd>🢁</kbd></p><p style="text-align:center"><kbd>🢀</kbd><kbd>🢃</kbd><kbd>🢂</kbd></p>
+
 Normalmente controlas la cabeza de nuestro querido amigo pero ten cuidado de no voltearla muy rapido
 
 <img src="https://i.imgur.com/40vjRX5.png">
