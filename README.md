@@ -6,6 +6,12 @@ Antonimouz in SN<span>~~ake~~</span>IVY
 
 Proyecto de Videojuego al estilo Snake con tematica especial de Cumpleaños de Antonimouz
 
+>  *EL MEJOR JUEGO DE LA VIDAAAAAA 💚💚💚💚💚💚💚💚💚💚💚
+> 
+> Me encantaaaaa!!!*
+<h6 style="text-align: right" href="https://www.facebook.com/AntonimouZ-100410038800777">Antonimouz </h6>  
+
+
 <img src="https://i.imgur.com/R2Puw8a.png">
 
 Tan simple como usar las direccionales para controlarlo
@@ -22,3 +28,5 @@ Es muy simple
 - Recoge esas cosas que aparecen
 - No choques con tu propio cuerpo
 **Si llegas a NIVEL 18, Antonimouz evolucionará**
+
+[a]: https://www.facebook.com/AntonimouZ-100410038800777 "a"
